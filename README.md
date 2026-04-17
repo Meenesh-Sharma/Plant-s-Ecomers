@@ -1,36 +1,219 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌿 Urban Sprout — Modern Plant E-Commerce Platform
 
-## Getting Started
+Urban Sprout is a **full-stack e-commerce platform** built for plant lovers 🌱.
+It provides a seamless experience for users to explore, purchase, and learn about plants, while giving admins powerful tools to manage the platform.
 
-First, run the development server:
+---
+
+## 🚀 Tech Stack
+
+### 🖥️ Frontend
+
+* **Next.js (Latest)**
+* **React**
+* **ShadCN UI**
+* **Tailwind CSS**
+
+### ⚙️ Backend
+
+* **Node.js**
+* **Express.js**
+
+### 🗄️ Database
+
+* **MongoDB**
+
+### ☁️ Services & Tools
+
+* **Cloudinary** → Image upload & optimization
+* **Socket.IO** → Real-time notifications
+* **JWT Authentication** → Secure login system
+
+---
+
+## 📁 Project Structure
+
+```
+Urban-Sprout/
+│
+├── frontend/   → User-facing e-commerce website
+├── admin/      → Admin dashboard (full control panel)
+├── backend/    → APIs, database logic, authentication
+│
+└── README.md
+```
+
+---
+
+## 🌟 Features
+
+### 🛒 User Features (Frontend)
+
+* Browse and explore plants 🌿
+* View detailed plant information
+* Add to cart & place orders
+* Responsive modern UI
+* Smooth shopping experience
+
+---
+
+### 🧑‍💼 Admin Features (Dashboard)
+
+* 🌱 **Plant Management (CRUD)**
+* 📘 **Care Guide Management**
+* 🔔 **Real-time Notifications (Socket.IO)**
+* 📊 **Analytics Dashboard**
+
+  * Monthly revenue charts
+  * Sales insights
+* 📦 Order management
+
+---
+
+## 🎨 UI/UX Highlights
+
+* Built with **ShadCN UI + Tailwind CSS**
+* Clean, modern, and responsive design
+* Smooth animations & interactions
+* Professional dashboard layout
+
+---
+
+## ⚡ Real-Time Features
+
+* Instant notifications using **Socket.IO**
+* Live updates for admin activities
+
+---
+
+## ☁️ Image Handling
+
+* Integrated with **Cloudinary**
+* Optimized image upload & delivery
+* Fast and scalable media management
+
+---
+
+## 🔐 Authentication
+
+* Secure login/signup system
+* Role-based access (Admin / User)
+* JWT-based authentication
+
+---
+
+## 📊 Admin Analytics
+
+* Revenue tracking (monthly)
+* Visual charts for better insights
+* Business performance monitoring
+
+---
+
+## 🛠️ Installation & Setup
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/your-username/urban-sprout.git
+cd urban-sprout
+```
+
+### 2️⃣ Install dependencies
+
+```bash
+cd backend
+npm install
+
+cd ../frontend
+npm install
+
+cd ../admin
+npm install
+```
+
+### 3️⃣ Setup Environment Variables
+
+Create `.env` file in backend:
+
+```
+MONGO_URI=your_mongodb_url
+JWT_SECRET=your_secret
+CLOUDINARY_NAME=your_cloud_name
+CLOUDINARY_KEY=your_key
+CLOUDINARY_SECRET=your_secret
+PORT=5000
+ALLOWED_ORIGINS=http://localhost:3560,http://localhost:3566
+JWT_SECRET
+```
+
+---
+Create `.env.local` file in fronted and admin:
+In frontend:
+NEXT_PUBLIC_API_BASE_URL=http://localhost:5000/api
+In admin:
+NEXT_PUBLIC_API_BASE_URL=http://localhost:5000
+
+### 4️⃣ Run the project
+
+#### Backend
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### Frontend
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+#### Admin Panel
 
-## Learn More
+```bash
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🌍 Future Enhancements
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* Payment gateway integration 💳
+* Wishlist feature ❤️
+* AI-based plant recommendations 🤖
+* Mobile app version 📱
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🤝 Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Contributions are welcome! Feel free to fork and submit a PR.
+
+---
+
+## 📌 Author
+
+**Sachin**
+Full Stack Developer 💻
+
+---
+
+## ⭐ Show Your Support
+
+If you like this project, give it a ⭐ on GitHub!
+
+---
+
+## 📸 Preview
+
+> Add screenshots of your project here for better presentation.
+
+---
+
+### 🌿 Urban Sprout — Grow Your Space, Naturally
+
+For ui setup in frontend and admin :
+ npx shadcn-ui@latest init
+ npx shadcn@latest add avatar badge button card checkbox dialog drawer dropdown-menu   input  label radio-group select scroll-area separator sheet skeleton slider tabs textarea toggle-froup toggle
+ 
+
